@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Dropdowns</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" class="logocontent">
+                <h1>Cayro</h1>
+                <img class="logo-img" src="best-for-shopping (1).png" alt="" height="25px" width="70px">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a class="droper" href="#"><i class="fa-brands fa-windows"></i> Categories <i
+                        class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown">
+                    <li class="nested-dropdown"><a href="#">Home Appliances</a>
+                        <ul class="dropdown nested">
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">SEO</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li class="nested-dropdown">
+                                <a href="#">Design</a>
+                                <ul class="dropdown nested">
+                                    <li><a href="#">Web Development</a></li>
+                                    <li><a href="#">Design</a></li>
+                                    <li><a href="#">SEO</a></li>
+                                    <li><a href="#">Web Development</a></li>
+                                    <li><a href="#">Design</a></li>
+                                    <li><a href="#">SEO</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">SEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Television</a></li>
+                    <li class="nested-dropdown">
+                        <a href="#">Kitchen Appliances</a>
+                        <ul class="dropdown nested">
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">SEO</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">SEO</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Mobiles</a></li>
+                    <li class="nested-dropdown"><a href="#">Personal Care</a>
+                        <ul class="dropdown nested">
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">SEO</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">SEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Daliy deal</a></li>
+                    <li><a href="#">Clearance Sale</a></li>
+                    <li><a href="#">Headphones</a></li>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </li>
+        </ul>
+        <input type="text" placeholder="Search Your Product" class="search-input">
+
+        <div class="social-icons">
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i> <span class="counter">02</span></a>
+        </div>
+        <button class="menu-btn" id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <div class="category-slider-container">
+        <button class="category-prev-btn" id="prevBtn-2">&#10094;</button>
+
+        <div class="category-slider-wrapper">
+            <div class="category-slider" id="category-slider">
+                <div class="category-item">
+                    <a class="catogory-link" href="#">
+                        <img src="catogory-img-1.jpg" alt="Category 1">
+                        <span>Category 1</span>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a class="catogory-link" href="#">
+                        <img src="catogory-img-2.png" alt="Category 2">
+                        <span>Category 2</span>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a class="catogory-link" href="#">
+                        <img src="catogory-img-3.webp" alt="Category 3">
+                        <span>Category 3</span>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a class="catogory-link" href="#">
+                        <img src="catogory-img-5.png" alt="Category 4">
+                        <span>Category 4</span></a>
+                </div>
+                <div class="category-item">
+                    <a class="catogory-link" href="#">
+                        <img src="catogory-img-6.png" alt="Category 5">
+                        <span>Category 5</span></a>
+                </div>
+                <div class="category-item">
+                    <a class="catogory-link" href="#">
+                        <img src="catogory-img-7.jpg" alt="Category 1">
+                        <span>Category 1</span></a>
+                </div>
+                <div class="category-item">
+                    <a class="catogory-link" href="#">
+                        <img src="catogory-img-7.jpg" alt="Category 2">
+                        <span>Category 2</span></a>
+                </div>
+                <div class="category-item">
+                    <a class="catogory-link" href="#">
+                        <img src="catogory-img-8.jpg" alt="Category 3">
+                        <span>Category 3</span></a>
+                </div>
+                <div class="category-item">
+                    <a class="catogory-link" href="#">
+                        <img src="catogory-img-9.webp" alt="Category 4">
+                        <span>Category 4</span></a>
+                </div>
+                <div class="category-item">
+                    <a class="catogory-link" href="#">
+                        <img src="catogory-img-10.webp" alt="Category 5">
+                        <span>Category 5</span></a>
+                </div>
+                <div class="category-item">
+                    <a class="catogory-link" href="#">
+                        <img src="catogory-img-11.webp" alt="Category 1">
+                        <span>Category 1</span></a>
+                </div>
+                <div class="category-item">
+                    <a class="catogory-link" href="#">
+                        <img src="catogory-img-5.png" alt="Category 4">
+                        <span>Category 4</span></a>
+                </div>
+                <div class="category-item">
+                    <a class="catogory-link" href="#">
+                        <img src="catogory-img-6.png" alt="Category 5">
+                        <span>Category 5</span></a>
+                </div>
+                <div class="category-item">
+                    <a class="catogory-link" href="#">
+                        <img src="catogory-img-7.jpg" alt="Category 1">
+                        <span>Category 1</span></a>
+                </div>
+                <!-- Add more categories here -->
+            </div>
+        </div>
+
+        <button class="category-next-btn" id="nextBtn-2">&#10095;</button>
+    </div>
+    <div class="slider-container">
+        <a href="#" class="slider-link">
+            <img src="image1.jpg" class="slider-image" id="slider-image" alt="Image 1">
+        </a>
+        <button class="prev-btn" id="prev-btn">&#10094;</button>
+        <button class="next-btn" id="next-btn">&#10095;</button>
+    </div>
+    <section class="content">
+
+        <div id="notification" class="notification"></div>
+
+        <!-- Product Slider Container -->
+        <div class="product-slider-container">
+            <button class="product-prev-btn" id="prevBtn-3">&#10094;</button>
+
+            <div class="product-slider" id="product-slider">
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+                <!-- Repeat for more products -->
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>z
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <button class="product-next-btn" id="nextBtn-3">&#10095;</button>
+        </div>
+        <div class="category-slider-container">
+            <button class="category-prev-btn" id="prevBtn-2">&#10094;</button>
+
+            <div class="category-slider-wrapper">
+                <div class="category-slider" id="category-slider">
+                    <div class="category-item">
+                        <a class="catogory-link" href="#">
+                            <img src="catogory-img-1.jpg" alt="Category 1">
+                            <span>Category 1</span>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a class="catogory-link" href="#">
+                            <img src="catogory-img-2.png" alt="Category 2">
+                            <span>Category 2</span>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a class="catogory-link" href="#">
+                            <img src="catogory-img-3.webp" alt="Category 3">
+                            <span>Category 3</span>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a class="catogory-link" href="#">
+                            <img src="catogory-img-5.png" alt="Category 4">
+                            <span>Category 4</span></a>
+                    </div>
+                    <div class="category-item">
+                        <a class="catogory-link" href="#">
+                            <img src="catogory-img-6.png" alt="Category 5">
+                            <span>Category 5</span></a>
+                    </div>
+                    <div class="category-item">
+                        <a class="catogory-link" href="#">
+                            <img src="catogory-img-7.jpg" alt="Category 1">
+                            <span>Category 1</span></a>
+                    </div>
+                    <div class="category-item">
+                        <a class="catogory-link" href="#">
+                            <img src="catogory-img-7.jpg" alt="Category 2">
+                            <span>Category 2</span></a>
+                    </div>
+                    <div class="category-item">
+                        <a class="catogory-link" href="#">
+                            <img src="catogory-img-8.jpg" alt="Category 3">
+                            <span>Category 3</span></a>
+                    </div>
+                    <div class="category-item">
+                        <a class="catogory-link" href="#">
+                            <img src="catogory-img-9.webp" alt="Category 4">
+                            <span>Category 4</span></a>
+                    </div>
+                    <div class="category-item">
+                        <a class="catogory-link" href="#">
+                            <img src="catogory-img-10.webp" alt="Category 5">
+                            <span>Category 5</span></a>
+                    </div>
+                    <div class="category-item">
+                        <a class="catogory-link" href="#">
+                            <img src="catogory-img-11.webp" alt="Category 1">
+                            <span>Category 1</span></a>
+                    </div>
+
+                    <!-- Add more categories here -->
+                </div>
+            </div>
+
+            <button class="category-next-btn" id="nextBtn-2">&#10095;</button>
+        </div>
+
+
+        <div class="product-slider-container">
+            <button class="product-prev-btn" id="prevBtn-3">&#10094;</button>
+
+            <div class="product-slider" id="product-slider">
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+                <!-- Repeat for more products -->
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <button class="product-next-btn" id="nextBtn-3">&#10095;</button>
+        </div>
+
+        <div class="partners-container">
+            <div class="partners-slider">
+                <img src="patrener1.jpg" alt="Partner 1">
+                <img src="partener2.png" alt="Partner 2">
+                <img src="parterner3.png" alt="Partner 3">
+                <img src="patrener1.jpg" alt="Partner 1">
+                <img src="partener2.png" alt="Partner 2">
+                <img src="parterner3.png" alt="Partner 3">
+                <img src="patrener1.jpg" alt="Partner 1">
+                <img src="partener2.png" alt="Partner 2">
+                <img src="parterner3.png" alt="Partner 3">
+                <img src="patrener1.jpg" alt="Partner 1">
+                <img src="partener2.png" alt="Partner 2">
+                <img src="parterner3.png" alt="Partner 3">
+                <img src="patrener1.jpg" alt="Partner 1">
+                <img src="partener2.png" alt="Partner 2">
+                <img src="parterner3.png" alt="Partner 3">
+                <img src="patrener1.jpg" alt="Partner 1">
+                <img src="partener2.png" alt="Partner 2">
+                <img src="parterner3.png" alt="Partner 3">
+                <img src="patrener1.jpg" alt="Partner 1">
+                <img src="partener2.png" alt="Partner 2">
+                <img src="parterner3.png" alt="Partner 3">
+                <img src="patrener1.jpg" alt="Partner 1">
+                <img src="partener2.png" alt="Partner 2">
+                <img src="parterner3.png" alt="Partner 3">
+                <!-- Repeaimages as needed -->
+            </div>
+        </div>
+        <div class="product-slider-container">
+            <button class="product-prev-btn" id="prevBtn-3">&#10094;</button>
+
+            <div class="product-slider" id="product-slider">
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+                <!-- Repeat for more products -->
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-container">
+                    <a class="new-lonch" href="#">
+                        <div class="product-image">
+                            <img src="pro1.jpg" alt="Product Image 1">
+                            <i class="fa fa-heart heart-icon" id="heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h2 class="product-name">Redmi Note 13 5G, 8 GB RAM, 256GB, Stealth Black</h2>
+                            <p class="product-category">Category 1</p>
+                            <p class="product-price">$50.00</p>
+                            <div class="quantity-wrapper" style="margin: 0px auto;">
+                                <input type="number" id="quantity-input" value="1" min="1">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                Cart</button>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <button class="product-next-btn" id="nextBtn-3">&#10095;</button>
+        </div>
+        <footer class="footer">
+            <div class="footer-section">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Orders & Returns</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Shopping</h3>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Integrations</a></li>
+                    <li><a href="#">API</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
